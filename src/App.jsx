@@ -1,12 +1,14 @@
 // import UseHook from "./components/UseHook";
 
-import UseState2 from "./components/UseState2";
+// import UseState2 from "./components/UseState2";
+import UseHookObject from './components/UseHookObject';
 
 const App = () => {
   return (
     <div>
         {/* <UseHook/> */}
-        <UseState2/>
+        {/* <UseState2/> */}
+        <UseHookObject/>
     </div>
   );
 };
