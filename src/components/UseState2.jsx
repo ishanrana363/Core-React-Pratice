@@ -1,28 +1,30 @@
-import React, { useState } from 'react';
+import { useState } from "react";
 
 const UseState2 = () => {
-    let initialCount = 0;
-    const [count,setCount] = useState(initialCount)
+    let initialValue = 0
+    const [count,setCount] = useState(initialValue);
+    const increamentFive = ()=>{
+        for(let i = 1;i<=10;i++){
+            setCount(prevValue=>prevValue+4)
+        }
+    }
+    const decrementTen = () =>{
+        for(let i = 1;i<=10;i++){
+            setCount(preveValue=>preveValue-1)
+        }
+    }
     return (
         <div>
-            count : {count} <br /> <br /> <br />
+            <h1>Count : {count}</h1>
+            <button onClick={increamentFive} >Increament10</button> <br /> <br />
+            <button onClick={()=>{setCount(initialValue)}} >Reset</button> <br /> <br />
             <button onClick={()=>{
-                setCount(initialCount)
-            }} >
-                reset
-            </button>
-             <br /> <br />
-             <button onClick={()=>{
                 setCount(count+1)
-             }} >
-                increment 
-             </button> 
-             <br /> <br /> <br />
-             <button onClick={()=>{
+            }} >Increment</button> <br /><br />
+            <button onClick={()=>{
                 setCount(count-1)
-             }} >
-                decrement 
-             </button>
+            }} >decrement</button> <br /> <br />
+            <button onClick={decrementTen} >decrementTen</button>
         </div>
     );
 };
