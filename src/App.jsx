@@ -1,9 +1,12 @@
-import Home from "./components/Home";
+// import UseHook from "./components/UseHook";
+
+import UseState2 from "./components/UseState2";
 
 const App = () => {
   return (
     <div>
-        <Home/>
+        {/* <UseHook/> */}
+        <UseState2/>
     </div>
   );
 };

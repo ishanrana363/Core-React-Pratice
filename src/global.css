@@ -9,3 +9,10 @@
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
+
+.btn{
+    margin-left: 50%;
+    margin-top: 100px;
+    width: 100px;
+    background-color:red;
+}
